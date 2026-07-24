@@ -1,5 +1,0 @@
-// Title: Top K Frequent Elements
-            // Difficulty: Unknown
-            // Language: undefined
-            // Link: https://leetcode.com/problems/top-k-frequent-elements/
-
