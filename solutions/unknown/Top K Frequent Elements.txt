@@ -1,5 +1,5 @@
 // Title: Top K Frequent Elements
             // Difficulty: Unknown
-            // Language: Python3
+            // Language: undefined
             // Link: https://leetcode.com/problems/top-k-frequent-elements/
 
