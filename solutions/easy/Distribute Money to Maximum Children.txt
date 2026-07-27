@@ -1,0 +1,18 @@
+// Title: Distribute Money to Maximum Children
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/distribute-money-to-maximum-children/
+
+        money_left = money - children
+        if money_left <0:
+            return -1
+        ans = min(money_left//7,children)
+        extra_money= money_left-ans*7
+        c= children-ans
+
+        if (extra_money>0 and c==0):
+            ans-=1
+        if(extra_money==3 and c==1):
+            ans-=1
+class Solution:
+    def distMoney(self, money: int, children: int) -> int:
