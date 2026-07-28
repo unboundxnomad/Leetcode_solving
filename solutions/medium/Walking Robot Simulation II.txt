@@ -1,0 +1,27 @@
+// Title: Walking Robot Simulation II
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/walking-robot-simulation-ii/
+
+        self.h = height
+        self.pos = [0, 0]
+        self.direc = 1
+        self.directions = {1: "East", 2: 
+        "North", 3: "West", 4: "South"}
+    def step(self, num: int) -> None:
+        perimeter = 2 * (self.w - 1) + 2 * (self.
+        h - 1)
+        num = num % perimeter
+        if num == 0:
+            n = perimeter
+        else:
+            n = num
+        while n>0:
+            r=0
+            if self.direc==1 :
+                self.pos[0]+=n
+                if self.pos[0]>=self.w:
+                    self.pos[0]-=n
+                    while self.pos[0]<self.w-1:
+                        r+=1
+                        self.pos[0]+=1
